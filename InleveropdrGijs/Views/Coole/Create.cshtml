@@ -1,0 +1,32 @@
+﻿@model Account
+
+<h1> Create view</h1>
+<br />
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div>
+            <h4 class="text-primary">Test</h4>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <label asp-for="klantNaam"></label>
+        <input asp-for="klantNaam" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Punten"></label>
+        <input asp-for="Punten" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="AantalVrienden"></label>
+        <input asp-for="AantalVrienden" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-secondary btn-sm m-1">Create</button>
+    <a asp-controller="Coole" asp-action="Index" class="btn btn-sm btn-info m-1"> back </a>
+</form>

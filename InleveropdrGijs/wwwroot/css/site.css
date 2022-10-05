@@ -1,0 +1,169 @@
+html {
+  font-size: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white
+}
+
+
+
+/*-----------headder------------*/
+    .introText h1 {
+        font-size: 50px;
+        text-decoration: underline;
+    }
+
+    .introText p {
+        margin: 10px 0 40px;
+        font-size: 18px;
+        text-align: center;
+        padding: 30px;
+    }
+
+
+nav .fas {
+    display: none;
+}
+
+/* -------------Werkzaamheden--------------- */
+
+.Werkzaamheden {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.text-box {
+    width: 90%;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    text-align: left; /* center ---> als vakje*/
+    padding: 5%;
+}
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    .text-box ul {
+        margin: 10px 0 40px;
+        font-size: 20px;
+        text-align: left; /* center ---> als vakje*/
+        padding: 0px;
+    }
+
+.knop-informatie {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1.8px solid rgb(0, 0, 0);
+    padding: 13px;
+    background: transparent;
+    position: relative;
+    margin-left: 00px;
+    cursor: pointer;
+}
+
+    .knop-informatie:hover {
+        border: 1px solid #250794;
+        background: #b58900;
+        transition: 0.7s;
+    }
+
+
+/* -------------Prijzen--------------- */
+
+.Prijzen {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.collum1 {
+    float: left;
+    width: 30%;
+    padding: 5px;
+
+}
+
+    .collum1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .collum1:hover {
+        background: transparent;
+        background: #b58900;
+        transition: 0.5s;
+    }
+
+
+/* -------------Footer--------------- */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 20px;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    /* Height of the footer*/
+    height: 40px;
+    
+}
+
+    .footer h4 {
+        margin-bottom: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
