@@ -5,7 +5,6 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: white
 }
 
 
@@ -59,7 +58,7 @@ h3 {
 
 .text-box {
     width: 90%;
-    color: rgb(0, 0, 0);
+    color: white;
     top: 50%;
     left: 50%;
     text-align: left; /* center ---> als vakje*/
@@ -68,6 +67,7 @@ h3 {
 
     .text-box h1 {
         font-size: 40px;
+        color: white;
     }
 
     .text-box ul {
@@ -75,6 +75,7 @@ h3 {
         font-size: 20px;
         text-align: left; /* center ---> als vakje*/
         padding: 0px;
+        color: white; 
     }
 
 .knop-informatie {
@@ -167,3 +168,6 @@ h3 {
     }
 }
 
+.control_label{
+    color: black
+}
