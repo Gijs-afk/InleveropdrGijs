@@ -7,29 +7,29 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using InleveropdrGijs.Data;
 using InleveropdrGijs.Models;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
-
-namespace InleveropdrGijs.wwwroot.API
+namespace InleveropdrGijs.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AccountsAPIController : ControllerBase
+    public class APIController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public AccountsAPIController(AppDbContext context)
+        public APIController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/AccountsAPI
+        // GET: api/API
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Account>>> GetAccounts()
         {
             return await _context.Accounts.ToListAsync();
         }
 
-        // GET: api/AccountsAPI/5
+        // GET: api/API/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Account>> GetAccount(int id)
         {
@@ -43,7 +43,7 @@ namespace InleveropdrGijs.wwwroot.API
             return account;
         }
 
-        // PUT: api/AccountsAPI/5
+        // PUT: api/API/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAccount(int id, Account account)
@@ -74,7 +74,10 @@ namespace InleveropdrGijs.wwwroot.API
             return NoContent();
         }
 
-        // POST: api/AccountsAPI
+
+
+
+        // POST: api/API
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Account>> PostAccount(Account account)
@@ -85,7 +88,7 @@ namespace InleveropdrGijs.wwwroot.API
             return CreatedAtAction("GetAccount", new { id = account.Id }, account);
         }
 
-        // DELETE: api/AccountsAPI/5
+        // DELETE: api/API/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAccount(int id)
         {
